@@ -62,7 +62,7 @@
   },
   "scripts": {
     "start": "react-scripts --openssl-legacy-provider start",
-    "build": "react-scripts --openssl-legacy-provider build",
+    "build": "SET NODE_OPTIONS=--openssl-legacy-provider && nuxt build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "prod": "npm run-script build && serve build",
