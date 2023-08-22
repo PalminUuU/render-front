@@ -90,9 +90,9 @@
   },
   "homepage": "https://localhost/exundi",
   "devServer": {
-    "historyApiFallback": true,
-    "contentBase": "./",
-    "hot": true
+    "historyApiFallback":{
+      "index":"/dist/index.html"
+    }
   },
   "main": "index.js",
   "keywords": [],
