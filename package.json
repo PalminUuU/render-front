@@ -62,7 +62,7 @@
   },
   "scripts": {
     "start": "react-scripts --openssl-legacy-provider start",
-    "build": "SET NODE_OPTIONS=--openssl-legacy-provider && nuxt build",
+    "build": "env-cmd react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "prod": "npm run-script build && serve build",
@@ -88,7 +88,7 @@
   "devDependencies": {
     "dotenv": "^10.0.0"
   },
-  "homepage": "https://localhost/web",
+  "homepage": "https://localhost/exundi",
   "devServer": {
     "historyApiFallback": true,
     "contentBase": "./",
